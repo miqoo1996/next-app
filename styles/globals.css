@@ -1,0 +1,70 @@
+body,h1,h2,h3,p {
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  padding-left: 0;
+}
+.wrapper{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.displayNone{
+  display: none;
+}
+
+
+/*!* montserrat-regular - latin *!*/
+/*@font-face {*/
+/*  font-family: 'Montserrat';*/
+/*  font-style: normal;*/
+/*  font-weight: 400;*/
+/*  src: local(''),*/
+/*  url('../assets/fonts/montserrat-v18-latin-regular.woff2') format('woff2'), !* Super Modern Browsers *!*/
+/*  url('../assets/fonts/montserrat-v18-latin-regular.woff') format('woff'), !* Modern Browsers *!*/
+/*}*/
+/* montserrat-600 - latin */
+/*@font-face {*/
+/*  font-family: 'Montserrat';*/
+/*  font-style: normal;*/
+/*  font-weight: 600;*/
+/*  src: local(''),*/
+/*    url('../assets/fonts/montserrat-v18-latin-600.woff2') format('woff2'),*/
+/*    url('../assets/fonts/montserrat-v18-latin-600.woff') format('woff'), */
+/*}*/
+
+
+@font-face {
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+  url('../public/fonts/montserrat-v18-latin-300.woff2') format('woff2'),
+  url('../public/fonts/montserrat-v18-latin-300.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+  url('../public/fonts/montserrat-v18-latin-regular.woff2') format('woff2'),
+  url('../public/fonts/montserrat-v18-latin-regular.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+    url('../public/fonts/montserrat-v18-latin-600.woff2') format('woff2'),
+    url('../public/fonts/montserrat-v18-latin-600.woff') format('woff');
+}

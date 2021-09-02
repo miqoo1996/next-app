@@ -1,0 +1,165 @@
+// @import './../scss/style.scss';
+.menu{
+    width: 100%;
+    height: 68px;
+    background-color: #000000;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    right: 0;
+
+    &Tool {
+        width: 80px;
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        height: 20px;
+    }
+
+    &ContainerBlock{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 30px);
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    &Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 38px;
+        list-style: none;
+    }
+
+    &Block{
+        position: relative;
+    }
+
+    &BlockRight{
+        height: 24px;
+
+        @media(min-width:600px){
+            position: relative;
+        }
+    }
+
+    &__item{
+        text-decoration: none;
+        font-family: 'Montserrat';
+        color: #fff;
+    }
+}
+
+
+.menuNavigation{
+    width: 100%;
+
+    a, li{
+        text-decoration: none;
+        font-family: 'Montserrat';
+        color: #fff;
+        cursor: pointer;
+    }
+    @media (max-width: 800px) {
+        display: none;
+    }
+}
+
+.menuLogo{
+    height: 20px;
+    width: 110px;
+}
+.hamburgerMbMenu{
+    width: 18px;
+    height: 12px;
+    margin-left: 37px;
+    position: relative;
+    cursor: pointer;
+
+    .hamburger1, .hamburger2, .hamburger3 , .hamburger11, .hamburger22, .hamburger33{
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: #fff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transition: .25s ease-in-out;
+    }
+
+    .hamburger1 {
+        top: 0px;
+        transform-origin: center center;
+    }
+
+    .hamburger2 {
+      top: 5px;
+      transform-origin: center center;
+    }
+
+    .hamburger3 {
+      top: 10px;
+      transform-origin: center center;
+    }
+
+    .hamburger11 {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 4px;
+    }
+
+    .hamburger22 {
+      width: 0%;
+      opacity: 0;
+    }
+
+    .hamburger33 {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 4px;
+    }
+}
+
+.menuBlock{
+
+    &Active{
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: fixed;
+        margin-top: 78px;
+        height: calc(100vh - 78px);
+        background: rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: flex-end;
+        @media (min-width: 800px) {
+            display: none;
+        }
+    }
+    &Container{
+        width: 400px;
+        margin-right: -400px;
+        background: white;
+        animation-name: hamburgerMenu;
+        animation-duration: 1s;
+        animation-delay: .2s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        @keyframes hamburgerMenu {
+            from {margin-right: -400px;}
+            to {margin-right: 0px;}
+        }
+    }
+}
+

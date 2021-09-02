@@ -1,0 +1,66 @@
+//@import './../../pages';
+
+.WatchSlider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #111;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        text-align: center;
+        font-size: 56px;
+        margin-bottom: 40px;
+        color: #fff;
+        font-family: 'Montserrat';
+
+        @media (max-width: 800px){
+            font-size: 32px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+    }
+    &__button{
+        border: 5px solid #444;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 50px;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 16px;
+        box-sizing: border-box;
+        font-family: 'Montserrat';
+        background-color: #111;
+    }
+
+    .slider{
+        margin-top: 60px;
+        margin-bottom: 90px;
+        width: 100%;
+
+        &__item{
+            object-fit: contain;
+            position: relative;
+            transform: scale(0.8);
+            transition: .33s;
+        }
+    }
+    .center {
+        .slider__item{
+            transform: scale(0.75) !important;
+
+            @media (min-width: 650px) {
+                transform: scale(1) !important;
+            }
+        }
+    }
+}

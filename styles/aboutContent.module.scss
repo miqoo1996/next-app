@@ -1,0 +1,51 @@
+.aboutContent{
+    width: 100%;
+    background-image: url('../public/images/Transparentblackcover.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px 30px;
+    box-sizing: border-box;
+
+    @media (min-width: 1024px) {
+        padding: 150px 100px 190px;
+    }
+
+    &__Container{
+        max-width: 585px;
+    }
+
+    &__title{
+        color: #fff;
+        font-family: 'Montserrat';
+        font-size: 56px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        @media (max-width: 800px){
+            font-size: 32px;
+        }
+    }
+
+    &__subTitle{
+        color: #fff;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &__text{
+        color: #fff;
+        font-family: 'Montserrat';
+    }
+
+    &__btn {
+        margin-top: 40px;
+        padding: 10px 15px;
+        border-radius: 30px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        font-family: 'Montserrat';
+        cursor: pointer;
+    }
+}
